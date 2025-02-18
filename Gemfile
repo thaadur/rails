@@ -51,7 +51,7 @@ group :rubocop do
   gem "rubocop-packaging", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
-  gem "rubocop-md", require: false
+  gem "rubocop-md", ">= 2.0.0", require: false
 end
 
 group :mdl do
