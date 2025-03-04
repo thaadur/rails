@@ -43,7 +43,7 @@ gem "terser", ">= 1.1.4", require: false
 gem "json", ">= 2.0.0"
 
 # Workaround until Ruby ships with cgi version 0.3.6 or higher.
-gem "cgi", ">= 0.3.6", require: false
+gem "cgi", ">= 0.3.7", require: false
 
 group :rubocop do
   gem "rubocop", ">= 1.25.1", require: false
