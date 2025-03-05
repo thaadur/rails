@@ -88,16 +88,16 @@ gem "web-console", require: false
 # Action Pack and railties
 rack_version = ENV.fetch("RACK", "~> 3.0")
 if rack_version != "head"
-  gem "rack", rack_version
+  gem "rack", ">= 3.0.13", rack_version
 else
-  gem "rack", git: "https://github.com/rack/rack.git", branch: "main"
+  gem "rack", ">= 3.0.13", git: "https://github.com/rack/rack.git", branch: "main"
 end
 
 # Active Job
 group :job do
   gem "resque", require: false
   gem "resque-scheduler", require: false
-  gem "sidekiq", require: false
+  gem "sidekiq", ">= 8.0.0", require: false
   gem "sucker_punch", require: false
   gem "delayed_job", require: false
   gem "queue_classic", ">= 4.0.0", require: false, platforms: :ruby
